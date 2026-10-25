@@ -66,13 +66,13 @@ docker run --rm -p 8000:8000 --env-file backend/.env wind-dashboard-api
 Build the web application (set the public API URL at build time when deploying):
 
 ```bash
-docker build --build-arg VITE_BACKEND_URL=http://localhost:8000 -t wind-dashboard-web ./frontend
+docker build --build-arg BACKEND_URL=http://localhost:8000 -t wind-dashboard-web ./frontend
 docker run --rm -p 8080:80 wind-dashboard-web
 ```
 
 ## Environment
 
-`backend/.env` uses only `PORT`, `FUELHH_API_URL`, `WINDFOR_API_URL`, and `FRONTEND_URL`. `frontend/.env` uses only `VITE_BACKEND_URL`. Examples are provided in both folders.
+`backend/.env` uses only `PORT`, `FUELHH_API_URL`, `WINDFOR_API_URL`, and `FRONTEND_URL`. `frontend/.env` uses only `BACKEND_URL`. Examples are provided in both folders.
 
 ## Quality checks
 
