@@ -1,0 +1,38 @@
+
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Testing and coverage
+coverage/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local files
+*.local
+backend/.env
+frontend/.env
+backend/__pycache__/
+backend/app/**/__pycache__/
+frontend/node_modules/
+frontend/dist/

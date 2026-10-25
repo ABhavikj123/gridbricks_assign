@@ -1,0 +1,1 @@
+"""Wind procurement dashboard backend."""
